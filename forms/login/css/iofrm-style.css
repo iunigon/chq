@@ -63,7 +63,6 @@ html, body {
 
 .website-logo .logo {
     display: inline-block;
-    background-image: url("../images/logo-light.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -90,7 +89,6 @@ html, body {
 
 .website-logo-inside .logo {
     display: inline-block;
-    background-image: url("../images/logo-light.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1437,7 +1435,7 @@ input.sm-content {
 }
 
 .form-body.without-side .website-logo-inside .logo {
-    background-image: url("../images/logo-dark.svg");
+    background-image: url("");
 }
 
 .form-body.without-side .form-holder .form-content ::-webkit-input-placeholder {
