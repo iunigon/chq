@@ -1,24 +1,61 @@
-<html>
-  <head>
-<!-- REDIRECTING STARTS -->
-<link rel="canonical" href="https://chq.unigon.net/archives/browse/index.html"/>
-<noscript>
-    <meta http-equiv="refresh" content="0;URL=https://chq.unigon.net/archives/browse/index.html">
-</noscript>
-<!--[if lt IE 9]><script type="text/javascript">var IE_fix=true;</script><![endif]-->
-<script type="text/javascript">
-    var url = "https://chq.unigon.net/archives/browse/index.html";
-    if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
-    {
-        document.write("redirecting..."); // Don't remove this line or appendChild() will fail because it is called before document.onload to make the redirect as fast as possible. Nobody will see this text, it is only a tech fix.
-        var referLink = document.createElement("a");
-        referLink.href = url;
-        document.body.appendChild(referLink);
-        referLink.click();
-    }
-    else { window.location.replace(url); } // All other browsers
-</script>
-  </head>
-    <body>
-      </body
-      </html>
+---
+layout: default
+title: Home
+---
+
+{% if page.url == "/" %}
+
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    <div class="row">
+
+    {% for post in site.posts %}
+
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    </div>
+</section>
+
+{% endif %}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>All Stories</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
