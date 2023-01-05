@@ -139,6 +139,9 @@
 
       /*z-index for future networknav*/
       .network-nav{
+        z-index: 9998;
+    }
+    .network-nav1{
         z-index: 9999;
     }
 
@@ -315,30 +318,7 @@ i {
 
 
 </head>
-
-<!-- UNIGON NAVBAR -->
-<div id="nav-colors network-nav">
-	Navbar
-	<button id="pink" class="btn"></button>
-	<button id="red" class="btn"></button>
-	<button id="purple" class="btn"></button>
-	<button id="blue" class="btn"></button>
-	<button id="green" class="btn"></button>
-	<button id="yellow" class="btn"></button>
-	<button id="orange" class="btn"></button>
-</div>
-<div id="font-colors">
-	Font
-	<button id="white" class="btn"></button>
-	<button id="black" class="btn"></button>
-</div>
-<div id="edges">
-	Edges
-	<button id="rounded" class="btn">Rounded</button>
-	<button id="square" class="btn">Square</button>
-</div>
-<h1>Minimal Bootstrap Navbar</h1>
-<nav class="navbar network-nav">
+<nav class="navbar network-nav1">
 	<div class="container-fluid">
 		<!-- Nav Header -->
 		<div class="navbar-header">
@@ -354,19 +334,19 @@ i {
 			<!-- Nav Left -->
 			<ul class="nav navbar-nav">
 				<!-- Products -->
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				<li class="dropdownu">
+					<a href="#" class="dropdownu-toggle" data-toggle="dropdownu" role="button" aria-haspopup="true" aria-expanded="false">
 						<span class="fa fa-tags"></span><span class="link"> Products</span> <span class="fa fa-caret-down"></span></a>
-					<ul class="dropdown-menu">
+					<ul class="dropdownu-menu">
 						<li><a href="#"><span class="fa fa-tag"></span> Catalogue 1</a></li>
 						<li><a href="#"><span class="fa fa-tag"></span> Catalogue 2</a></li>
 					</ul>
 				</li>
 				<!-- Services -->
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				<li class="dropdownu">
+					<a href="#" class="dropdownu-toggle" data-toggle="dropdownu" role="button" aria-haspopup="true" aria-expanded="false">
 						<span class="fa fa-gears"></span><span class="link"> Services</span> <span class="fa fa-caret-down"></span></a>
-					<ul class="dropdown-menu">
+					<ul class="dropdownu-menu">
 						<li><a href="#"><span class="fa fa-gear" /></span> Service 1</a></li>
 						<li><a href="#"><span class="fa fa-gear" /></span> Service 2</a></li>
 						<li><a href="#"><span class="fa fa-gear" /></span> Service 3</a></li>
@@ -1330,7 +1310,7 @@ jQuery(document).ready(function($){
 //         // if the current path is like this link, make it active
 //         if($this.attr('href').indexOf(current) !== -1){
 //             $this.parent().addClass('active');
-//             $this.parents('.menu-submenu').addClass('show-dropdown');
+//             $this.parents('.menu-submenu').addClass('show-dropdownu');
 //             $this.parents('.menu-submenu').parent().addClass('active');
 //         }else{
 //             $this.parent().removeClass('active');
