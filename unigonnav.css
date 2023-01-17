@@ -103,37 +103,37 @@ body {
         transition: 0.2s ease-in-out; }
         .navbar form .form-control:hover {
           background: white; }
-    .navbar .dropdown .fa-caret-down {
+    .navbar .dropdownu .fa-caret-down {
       padding-left: 3px;
       font-size: 18px;
       transition: 0.4s ease; }
-    .navbar .dropdown.open {
+    .navbar .dropdownu.open {
       background-color: rgba(255, 255, 255, 0.2);
       font-size: 14px; }
-      .navbar .dropdown.open .link {
+      .navbar .dropdownu.open .link {
         width: 100%;
         visibility: visible;
         font-size: 14px;
         padding: 0 5px 0 5px; }
-      .navbar .dropdown.open .dropdown-toggle {
+      .navbar .dropdownu.open .dropdownu-toggle {
         font-size: 14px; }
-      .navbar .dropdown.open .fa-caret-down {
+      .navbar .dropdownu.open .fa-caret-down {
         transform: rotate(180deg); }
-    .navbar .dropdown .dropdown-menu {
+    .navbar .dropdownu .dropdownu-menu {
       min-width: 0px !important;
       width: 100%;
       background: #ff5858;
       text-align: center;
       border-radius: 0; }
-      .navbar .dropdown .dropdown-menu li, .navbar .dropdown .dropdown-menu a {
+      .navbar .dropdownu .dropdownu-menu li, .navbar .dropdownu .dropdownu-menu a {
         color: white;
         font-size: 14px;
         line-height: 30px; }
-        .navbar .dropdown .dropdown-menu li:hover, .navbar .dropdown .dropdown-menu a:hover {
+        .navbar .dropdownu .dropdownu-menu li:hover, .navbar .dropdownu .dropdownu-menu a:hover {
           color: white;
           letter-spacing: 1px;
           background: transparent; }
-      .navbar .dropdown .dropdown-menu a {
+      .navbar .dropdownu .dropdownu-menu a {
         padding: 0 15px 0 15px; }
   
   @media (max-width: 769px) {
@@ -144,7 +144,7 @@ body {
       font-size: 14px; }
     .navbar .navbar-brand .link {
       visibility: hidden; }
-    .dropdown .dropdown-menu {
+    .dropdownu .dropdownu-menu {
       text-align: left !important; }
     button[type='submit'] {
       width: 50%;
