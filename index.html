@@ -6,8 +6,6 @@
   <meta name="robots" content="noindex, nofollow">
 
   <title>Directory / CHQ / Sites / UNIGON</title>
-
-  <link rel="stylesheet" href="unigonnav.css">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -30,11 +28,20 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
-
-  <!--W3CSS-bootstrap imports [will deprecate soon in favour of pure bootstrap and font awesome v 5.0]-->
-  <link rel="icon" type="image/x-icon" href="">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <style>
+.inset-l-full {
+    left: 100%;
+}
+.networknav2 {
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
   #header {
     background: url(https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) center center / cover no-repeat ;
   }
@@ -143,9 +150,6 @@
       .network-nav{
         z-index: 9998;
     }
-    .network-nav1{
-        z-index: 9999;
-    }
 
 
 
@@ -161,105 +165,7 @@ body{
 i {
 	margin-right: 10px;
 }
-/*----------bootstrap-navbar-css------------*/
-.navbar-logo{
-	padding: 15px;
-	color: #fff;
-}
-.navbar-mainbg{
-	background-color: #5161ce;
-	padding: 0px;
-}
-#navbarSupportedContent{
-	overflow: hidden;
-	position: relative;
-}
-#navbarSupportedContent ul{
-	padding: 0px;
-	margin: 0px;
-}
-#navbarSupportedContent ul li a i{
-	margin-right: 10px;
-}
-#navbarSupportedContent li {
-	list-style-type: none;
-	float: left;
-}
-#navbarSupportedContent ul li a{
-	color: rgba(255,255,255,0.5);
-    text-decoration: none;
-    font-size: 15px;
-    display: block;
-    padding: 20px 20px;
-    transition-duration:0.6s;
-	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    position: relative;
-}
-#navbarSupportedContent>ul>li.active>a{
-	color: #5161ce;
-	background-color: transparent;
-	transition: all 0.7s;
-}
-#navbarSupportedContent a:not(:only-child):after {
-	content: "\f105";
-	position: absolute;
-	right: 20px;
-	top: 10px;
-	font-size: 14px;
-	font-family: "Font Awesome 5 Free";
-	display: inline-block;
-	padding-right: 3px;
-	vertical-align: middle;
-	font-weight: 900;
-	transition: 0.5s;
-}
-#navbarSupportedContent .active>a:not(:only-child):after {
-	transform: rotate(90deg);
-}
-.hori-selector{
-	display:inline-block;
-	position:absolute;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	transition-duration:0.6s;
-	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	background-color: #fff;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	margin-top: 10px;
-}
-.hori-selector .right,
-.hori-selector .left{
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	background-color: #fff;
-	bottom: 10px;
-}
-.hori-selector .right{
-	right: -25px;
-}
-.hori-selector .left{
-	left: -25px;
-}
-.hori-selector .right:before,
-.hori-selector .left:before{
-	content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #5161ce;
-}
-.hori-selector .right:before{
-	bottom: 0;
-    right: -25px;
-}
-.hori-selector .left:before{
-	bottom: 0;
-    left: -25px;
-}
+
 
 
 @media(min-width: 992px){
@@ -320,87 +226,76 @@ i {
 
 
 </head>
-<nav class="navbar network-nav1">
-	<div class="container-fluid">
-		<!-- Nav Header -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><span class="fa fa-home"></span><span class="link"> Home</span></a>
-		</div>
-		<!-- Nav Collapse -->
-		<div class="navbar-collapse collapse" id="collapse-1">
-			<!-- Nav Left -->
-			<ul class="nav navbar-nav">
-				<!-- Products -->
-				<li class="dropdownu">
-					<a href="#" class="dropdownu-toggle" data-toggle="dropdownu" role="button" aria-haspopup="true" aria-expanded="false">
-						<span class="fa fa-tags"></span><span class="link"> Products</span> <span class="fa fa-caret-down"></span></a>
-					<ul class="dropdownu-menu">
-						<li><a href="#"><span class="fa fa-tag"></span> Catalogue 1</a></li>
-						<li><a href="#"><span class="fa fa-tag"></span> Catalogue 2</a></li>
-					</ul>
-				</li>
-				<!-- Services -->
-				<li class="dropdownu">
-					<a href="#" class="dropdownu-toggle" data-toggle="dropdownu" role="button" aria-haspopup="true" aria-expanded="false">
-						<span class="fa fa-gears"></span><span class="link"> Services</span> <span class="fa fa-caret-down"></span></a>
-					<ul class="dropdownu-menu">
-						<li><a href="#"><span class="fa fa-gear" /></span> Service 1</a></li>
-						<li><a href="#"><span class="fa fa-gear" /></span> Service 2</a></li>
-						<li><a href="#"><span class="fa fa-gear" /></span> Service 3</a></li>
-					</ul>
-				</li>
-				<!-- About -->
-				<li><a href="#"><span class="fa fa-info-circle"></span><span class="link"> About</span></a></li>
-				<!-- Contact -->
-				<li><a href="#"><span class="fa fa-phone"></span><span class="link"> Contact</span></a></li>
-			</ul>
-			<!-- Nav Right -->
-			<form class="navbar-form navbar-right">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn"><span class="fa fa-search"></span></button>
-			</form>
-		</div>
-	</div>
-</nav>
+
+<!-- START NAVBAR --> 
+<div class="network-nav1 network-nav w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="" class="w3-bar-item w3-button w3-red w3-hover-pale-red"><i class="fa fa-server w3-margin-right"></i>d</a>
+   <a href="" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red"><i class="fa fa-archive w3-margin-right"></i>dd</a>
+   <!--Dropdown: Library collections-->
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="List of yEAh Games [external] library collections"><i class="fa fa-folder-open w3-margin-right"></i>dddd <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href=""  target="_blank" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o w3-margin-right"></i>ddd</a>
+      <a href=""  target="_blank" class="w3-bar-item w3-button"><i class="fa fa-question-circle w3-margin-right"></i>dddd</a>
+      <a href="" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-quote-left w3-margin-right"></i>dddd</a>
+    </div>
+  </div>     
+   <a href="" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red"><i class="fa fa-wechat w3-margin-right"></i>dd</a>
+   <a href="" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red"><i class="fa fa-book w3-margin-right"></i>ddd</a>
+   <a href="" target=”_blank” class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red"><i class="fa fa-lock w3-margin-right"></i>dd</a>
+   <a href="t" class="w3-bar-item w3-button w3-hide-small w3-hover-pale-red"><i class="fa fa-shopping-cart w3-margin-right"></i>dd</a>
 
 
-<!--Navbar for CHQ-->
-<nav class="network-nav navbar navbar-expand-custom navbar-mainbg">
-  <a class="navbar-brand navbar-logo" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <i class="fas fa-bars text-white"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-          <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
-          </li>
-          <li class="nav-item active">
-              <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
-          </li>
-      </ul>
+
+
+    <!--Dropdown: Social-->
+
+   <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Follow yEAh Games on social media!"><i class="fa fa-mobile-phone w3-margin-right"></i>dd <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="d"  target="_blank" class="w3-bar-item w3-button"><i class="fa fa-wechat w3-margin-right"></i>ddddd</a>
+     </div>
   </div>
-</nav>
+
+    <!--Dropdown: Deprecated-->
+  
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Deprecated yEAh Games websites (out-of-date; not updated)"><i class="fa fa-close w3-margin-right"></i>dd <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="https://yeaharchives.wordpress.com"  target=”_blank” class="w3-bar-item w3-button"><i class="fa fa-archive w3-margin-right"></i>Dds</a>
+      <a href="https://yeah-games.weebly.com"  target=”_blank” class="w3-bar-item w3-button"><i class="fa fa-desktop w3-margin-right"></i>Dd</a>
+      <a href="https://yeahgames.neocities.org"  target=”_blank” class="w3-bar-item w3-button"><i class="fa fa-user-secret w3-margin-right"></i>h</a>
+
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" title="Search"><i class="fa fa-search"></i></a>
+</div>
+
+
+<!--END NAVBAR-->
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+  <a href="/" class="w3-bar-item w3-button">Repositories</a>
+  <a href="https://yeahgames.pro" class="w3-bar-item w3-button">Archives</a>
+  <a href="https://youtu.be/dQw4w9WgXcQ" class="w3-bar-item w3-button">Pro</a>
+  <a href="#" class="w3-bar-item w3-button">Search</a>
+</div>
+</div>
+
+<script>
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else { 
+  x.className = x.className.replace(" w3-show", "");
+}
+}
+</script>
 
 
 
@@ -451,7 +346,7 @@ hi curran
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary ">
     <!-- Brand Logo -->
     <br>
     <br>
